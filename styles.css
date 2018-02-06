@@ -1,1 +1,11 @@
-#top{};
+body{
+  margin: 0;
+}
+
+/* This is the very top banner of the page */
+
+#top{
+  background-color: #767b84;
+  height: 480px;
+  width: 100%;
+};
