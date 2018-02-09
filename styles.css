@@ -9,3 +9,22 @@ body{
   height: 480px;
   width: 100%;
 };
+
+/* This is the styling for the about me section */
+
+#who{
+  margin: 0;
+}
+
+/* This is the tiles that show the projects */
+
+#projects-tile-showcase{
+  display: flex;
+}
+
+/* This is for the project tiles. It controls the size of the tiles */
+
+.tile{
+  width: 375px;
+  height: 500px;
+}
