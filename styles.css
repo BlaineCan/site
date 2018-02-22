@@ -1,30 +1,64 @@
 body{
-  margin: 0;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #fcfcfc;
+  color: rgba(112, 90, 90, .5);
 }
 
-/* This is the very top banner of the page */
-
-#top{
-  background-color: #767b84;
-  height: 480px;
-  width: 100%;
-};
-
-/* This is the styling for the about me section */
-
-#who{
-  margin: 0;
+.no-margin{
+  margin: 0px auto;
 }
 
-/* This is the tiles that show the projects */
-
-#projects-tile-showcase{
-  display: flex;
+#canvas{
+  max-width: 960px;
+  padding: 50px;
 }
 
-/* This is for the project tiles. It controls the size of the tiles */
+div{
+  display: block;
+}
 
-.tile{
-  width: 375px;
-  height: 500px;
+#divider{
+  border-bottom: 1px solid #ddd;
+}
+
+
+#nav ul{
+  text-decoration: none !important;
+  list-style: none;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#nav li{
+  display: inline;
+  letter-spacing: 0.0012em;
+  padding: 12px;
+}
+
+#logo{
+  float: left;
+}
+
+body h1{
+  color: #705a5a;
+}
+
+/* Note that this will need to be changed from li to a when the links have been assigned */
+
+body li{
+  color: #705a5a;
+}
+
+
+
+nav{
+  float: right;
+}
+
+header{
+  padding-bottom: 130px;
 }
