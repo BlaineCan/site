@@ -2,34 +2,42 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
-  font-style: normal;
-  background-color: #fcfcfc;
-  color: rgba(112, 90, 90, .5);
+  line-height: 1.4;
+  color: #6a6969;
 }
 
   body .container {
     padding-left: 22px;
-    padding-top: 22px; 
+    padding-top: 22px;
   }
 
   body h1{
-    color: #705a5a;
-    font-size: 80px;
+    color: black;
+    font-size: 90px;
   }
 
-  body ul li {
-    padding: 8px;
+  body a:link{
+    font-weight: 700;
+    text-decoration: none;
   }
 
-  body a{
-    color: #705a5a;
-    text-decoration: none !important;
+  body a:-webkit-any-link {
+    color: #6a6969;
   }
 
     body a:hover {
-      color: #f26652;
+      cursor: pointer;
+      border-bottom: 3px solid currentColor;
     }
 
 .no-margin{
   margin: 0px auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.drop {
+  font-weight: 700;
 }
