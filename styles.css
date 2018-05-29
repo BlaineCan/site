@@ -15,16 +15,7 @@ body{
     color: black;
     font-size: 70px;
   }
-
-<<<<<<< HEAD
-    h1 > a{
-=======
-    h1 > a {
->>>>>>> 0e066759176c6e49442b1c93405561e40728e885
-      font-size: 22px;
-      padding-bottom: 18px;
-    }
-
+  
   body a:link{
     font-weight: 700;
     text-decoration: none;
