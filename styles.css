@@ -65,3 +65,11 @@ button{
   display: flex;
   flex-direction: column;
 }
+
+  .flexcol button{
+    width: 14%;
+  }
+
+  .flexcol .field{
+    height: 65px;
+  }
