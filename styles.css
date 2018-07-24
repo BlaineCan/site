@@ -73,3 +73,7 @@ button{
   .flexcol .field{
     height: 65px;
   }
+
+.field{
+  border: #6a6969;
+}
