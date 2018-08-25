@@ -8,11 +8,11 @@
 }
 
 body{
-  font-family: 'PT Mono', monospace;
+  font-family: 'Roboto Mono', monospace;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.2;
-  color: #6a6969;
+  color: #333333;
 }
 
   body .container{
@@ -31,7 +31,7 @@ body{
   }
 
   body a:-webkit-any-link{
-    color: #6a6969;
+    color: #1769ff;
   }
 
     body a:hover{
@@ -40,6 +40,7 @@ body{
     }
 
 .drop {
+  color: #1769ff;
   font-weight: 700;
 }
 
