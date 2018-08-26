@@ -21,5 +21,6 @@
             friendform.className += ' hidden';
         });
     }
+    
     this.init();
 })(); 
