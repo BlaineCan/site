@@ -57,6 +57,5 @@ body{
 
 footer{
   padding-bottom: 1rem;
-  position: absolute;
-  bottom: 0;
+  padding-top: 8rem;
 }
