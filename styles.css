@@ -3,6 +3,11 @@
   margin: 0 auto;
 }
 
+.title{
+  font-size: 1.75rem;
+  color: #1769ff;
+}
+
 main{
   height: 57rem;
   width: auto;
@@ -57,5 +62,4 @@ body{
 
 footer{
   padding-bottom: 1rem;
-  padding-top: 8rem;
 }
