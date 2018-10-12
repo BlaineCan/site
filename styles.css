@@ -4,30 +4,48 @@
 }
 
 main{
+  text-align: center;
   height: 57rem;
   width: auto;
-  padding-left: 4%;
+  /* padding-left: 4%; */
   padding-top: 1.5rem;
 }
 
-section{
-  display: inline-block;
-  margin-top: 4rem;
-}
-
-  section p{
-    width: 50%;
+  main p{
+    padding: 0 19rem;
   }
 
-  section img{
-    margin: -1.75rem 6.5rem;
-    float: right;
-    width: 25%;
-    padding: .25rem;
-    border: .25rem solid black;
+section{
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+  section > h3{
+    font-size: 3em;
+    padding-left: 4%;
+  }
+
+    section p{
+      width: 52%;
+    }
+
+article{
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+  article div{
+    margin: 0 5rem;
+    width: 20rem;
+  }
+
+  article p{
+    padding: 0;
   }
 
 body{
+  width: 100%;
   font-family: 'Roboto Mono', monospace;
   font-size: 1em;
   font-weight: 400;
@@ -56,6 +74,7 @@ body{
     }
 
 footer{
+  text-align: center;
   padding-bottom: 1rem;
   padding-top: 8rem;
 }
