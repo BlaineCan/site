@@ -7,7 +7,6 @@ main{
   text-align: center;
   height: 57rem;
   width: auto;
-  /* padding-left: 4%; */
   padding-top: 1.5rem;
 }
 
@@ -17,17 +16,12 @@ main{
 
 section{
   display: inline-block;
-  margin-top: 1rem;
 }
 
   section > h3{
     font-size: 3em;
-    padding-left: 4%;
+    font-weight: 400;
   }
-
-    section p{
-      width: 52%;
-    }
 
 article{
   padding: 0 4rem;
@@ -46,10 +40,10 @@ article{
 
 body{
   width: 100%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #333333;
 }
 
@@ -57,6 +51,7 @@ body{
     margin: 0;
     color: black;
     font-size: 5rem;
+    font-weight: 400;
   }
 
   body a:link{
