@@ -9,35 +9,47 @@
 }
 
 main{
+  text-align: center;
   height: 57rem;
   width: auto;
-  padding-left: 4%;
   padding-top: 1.5rem;
 }
 
-section{
-  display: inline-block;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-  section p{
-    width: 50%;
+  main p{
+    padding: 0 19rem;
   }
 
-  section img{
-    margin: -1.75rem 6.5rem;
-    float: right;
-    width: 25%;
-    padding: .25rem;
-    border: .25rem solid black;
+section{
+  display: inline-block;
+  margin: 0.50rem 0;
+}
+
+  section > h3{
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+article{
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+  article div{
+    margin: 0 5rem;
+    width: 20rem;
+  }
+
+  article p{
+    padding: 0;
   }
 
 body{
-  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+  font-family: 'Oxygen', sans-serif;
   font-size: 1em;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.8;
   color: #333333;
 }
 
@@ -45,6 +57,7 @@ body{
     margin: 0;
     color: black;
     font-size: 5rem;
+    font-weight: 400;
   }
 
   body a:link{
@@ -62,6 +75,7 @@ body{
     }
 
 footer{
+  text-align: center;
   padding-bottom: 1rem;
 }
 
