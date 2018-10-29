@@ -9,7 +9,7 @@ function getAge(dob){
   return age;
 }
 
-(function showAge(){
+(()=>{
   let age = document.querySelector('#age');
   age.textContent = getAge("7/20/1989");
 })();
