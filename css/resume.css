@@ -22,9 +22,14 @@ h1{
 }
 
 section{
+	width: 55%;
 	border-bottom: 1px var(--font-blackish) solid;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+}
+
+#top{
+	margin-bottom: 12px;
 }
 
 h2{	
