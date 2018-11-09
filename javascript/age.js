@@ -1,4 +1,4 @@
-function getAge(dob){
+getAge = (dob)=>{
   let today = new Date();
   let birthdate = new Date(dob);
   let age = today.getFullYear() - birthdate.getFullYear();

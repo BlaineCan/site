@@ -1,3 +1,6 @@
+:root{
+  --font-color-blue: #1769ff;
+}
 
 .no-margin{
   margin: 0 auto;
@@ -5,7 +8,7 @@
 
 .title{
   font-size: 1.75rem;
-  color: #1769ff;
+  color: var(--font-color-blue);
 }
 
 main{
@@ -66,7 +69,7 @@ body{
   }
 
   body a:-webkit-any-link{
-    color: #1769ff;
+    color: var(--font-color-blue);
   }
 
     body a:hover{
@@ -81,6 +84,6 @@ footer{
 
 p a{
   font-weight: 700;
-  color: #1769ff;
+  color: var(--font-color-blue);
   text-decoration: underline;
 }
