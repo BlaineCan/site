@@ -1,0 +1,58 @@
+@media (max-width:450px){
+    body{
+        font-size: 1.5rem;
+    }
+
+    main{
+        text-align: center;
+        width: 100%;
+    }
+
+        main p{
+            padding: 0;
+            margin: 0 auto;
+        }
+
+    body h1{
+        display: block;
+        font-size: 3rem;
+    }
+
+    section{
+        display: block;
+        width: 100%;
+    }
+
+        section > h3{
+            font-size: 3rem;
+        }
+
+    article{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+        article div{
+            margin: 0 auto;
+        }
+
+    div a{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    div > a::after{
+        content: ' ';
+    }
+
+    footer{
+        margin: 1.5rem auto;
+        font-size: 1rem;
+    }
+
+    p > a{
+        display: inline-block;
+    }
+}

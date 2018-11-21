@@ -11,35 +11,6 @@
   color: var(--font-color-blue);
 }
 
-@media (min-width: 450px) {
-  main{
-    display: block;
-    text-align: center;
-    width: auto;
-  }
-
-  main p{
-    padding: 0 0.75rem;
-  }
-
-  body{
-    width: 100%;
-    font-family: 'Oxygen', sans-serif;
-    font-size: 1em;
-    font-weight: 400;
-    line-height: 1.8;
-    color: #333333;
-  }
-
-  h1{
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 500;
-  }
-
-}
-
-
 main{
   text-align: center;
   height: 57rem;
@@ -116,3 +87,7 @@ p a{
   color: var(--font-color-blue);
   text-decoration: underline;
 } 
+
+div > a::after{
+  content: " /"
+}
