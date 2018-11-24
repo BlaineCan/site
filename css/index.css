@@ -88,6 +88,6 @@ p a{
   text-decoration: underline;
 } 
 
-span::after{
+nav span::after{
   content: "  /  ";
 }
