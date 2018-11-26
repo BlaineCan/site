@@ -1,6 +1,11 @@
 @media (max-width:450px){
+
     body{
         font-size: 1.5rem;
+    }
+    
+    p > a{
+        display: inline-block;
     }
 
     main{
@@ -17,6 +22,14 @@
         display: block;
         font-size: 3rem;
     }
+
+    nav{
+        margin: 0 6rem;
+    }
+        
+        nav span::after{
+            content: " ";
+        }
 
     section{
         display: block;
@@ -43,16 +56,8 @@
         margin: 0;
     }
 
-    div > a::after{
-        content: ' ';
-    }
-
     footer{
         margin: 1.5rem auto;
         font-size: 1rem;
-    }
-
-    p > a{
-        display: inline-block;
     }
 }
