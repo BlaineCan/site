@@ -33,6 +33,7 @@ section{
   }
 
 article{
+  align-items: center;
   padding: 0 4rem;
   display: flex;
   justify-content: center;
@@ -45,6 +46,11 @@ article{
 
   article p{
     padding: 0;
+  }
+
+  article img{
+    display: block;
+    margin: 1rem auto;
   }
 
 body{
