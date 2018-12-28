@@ -8,3 +8,8 @@ a{
     cursor: pointer;
     text-decoration: underline;
 }
+
+h1{
+    font-size: 4.155rem;
+    line-height: 2.668rem;
+}
