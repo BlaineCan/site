@@ -6,15 +6,14 @@
     <meta name="description" content="Just a little personal site I made for all myself.">
     <title>Blaine Cantrell</title>
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" media="(max-width:450px)" href="css/small.css">
+    <link rel="stylesheet" href="styles.css">
     <!-- -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300" rel="stylesheet">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <!-- -->
-    <link rel="icon" href="images/blue-cube.png" type="image/png">
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/xbox-b.png" type="image/png">
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
     <script>
@@ -26,37 +25,55 @@
     </script>
     <!-- -->
   </head>
-  <body class="no-margin">
+  <body>
     <main>
-      <h1>Blaine Cantrell</h1>
-      <div>
-        <nav>
-          <a target="_blank" href="https://github.com/Whatchamazog">Github</a><span></span>
-          <a target="_blank" href="https://www.linkedin.com/in/blaine-cantrell-9795a559/">LinkedIn</a><span></span>
-          <a target="_blank" href="https://www.freecodecamp.org/blainecantrell">FreeCodeCamp</a><span></span>
-          <a target="_blank" href="https://codepen.io/whatchamazog/">Codepen</a>      
-        </nav>
-          <p>Hi! my name is Blaine. I am a <span id="age"></span> year old, mostly self-taught web application developer with a newly found passion for javascript. I was born and raised in <a target="_blank" href="https://www.google.com/maps/place/Dallas,+TX/@32.8208747,-96.8719694,11z/data=!3m1!4b1!4m5!3m4!1s0x864c19f77b45974b:0xb9ec9ba4f647678f!8m2!3d32.7766642!4d-96.7969879">Dallas</a> and currently living here as well.</p>
-        <section>
-          <h3 class="no-margin">Projects : </h3>
-        </section>
-          <article>
-            <!-- This was javascript, but is now hard coded because internet explorer -->
-          </article>
+      <section>
+          <h1>Hi<br></h1>
+          <h1>My name is Blaine.</h1>
+          <div>
+            <p>I am a <span id="age"></span> year old, mostly self-taught, highly motivated web application developer with a love for helping, a nack for learning, and a few years of retail experience to top it all off.</p>
+          </div>
+      </section>
+      <section>
+        <p>I was born in a city called <a target="_blank" href="https://www.google.com/maps/place/Dallas,+TX/@32.8209296,-97.0117251,10z/data=!3m1!4b1!4m5!3m4!1s0x864c19f77b45974b:0xb9ec9ba4f647678f!8m2!3d32.7766642!4d-96.7969879">Dallas</a>, the third most populated city in the Lone Star State.</p>
+      </section>
+      <section>
+        <p>I've built some stuff and would love it if you'd check them out!</p>
+        <div>
+          <h1>Projects</h1>
+          <div>
+            <img src="https://img.icons8.com/carbon-copy/64/000000/partly-cloudy-day.png" alt="Weather Icon">
+            <p><a target="_blank" href="https://glacial-shelf-37185.herokuapp.com/">Weather</a></p>
+            <p>A simple express app that takes a city name and returns the weather conditions.</p>
+            <p><a href="https://github.com/Whatchamazog/weather">Code</a></p>
+          </div>
+          <div>
+            <img src="https://img.icons8.com/carbon-copy/64/000000/calculator.png" alt="Calculator Icon">
+            <p><a target="_blank" href="https://whatchamazog.github.io/calculator/">Calculator</a></p>
+            <p>A html-javascript brolierplate for anyone that needs a foundation for a calculator project</p>
+            <p><a target="_blank" href="https://github.com/Whatchamazog/calculator">Code</a></p>
+          </div>
+        </div>
+      </section>
           <br>
           <img src="https://img.icons8.com/dotty/50/000000/resume.png">
           <p>I have a <a target="_blank" href="https://docs.google.com/document/d/19tWgT07BkaS_L2WmLQYZlfyRfKnDdXRfXXGvVqhZo2Q/edit?usp=sharing">résumé</a> too, if you're into that sort of thing. </p>
       </div>
         <footer>
-          <p>&#169;<span> 2018</span> Blaine Cantrell. Made in Texas.</p>
-          <p>Image provided by: <a href="https://icons8.com">Icon pack by Icons8</a></p>
-          <a target="_blank" href="https://github.com/Whatchamazog/Site/issues/new">Report an Issue</a>
-          <br>
+          <div>
+            <a target="_blank" href="https://github.com/Whatchamazog">Github</a>
+            <a target="_blank" href="https://www.linkedin.com/in/blaine-cantrell-9795a559/">LinkedIn</a>
+            <a target="_blank" href="https://www.freecodecamp.org/blainecantrell">FreeCodeCamp</a>
+            <a target="_blank" href="https://codepen.io/whatchamazog/">Codepen</a>
+          </div>
+          <div>
+            <p>&#169;<span> 2018</span> Blaine Cantrell. Made in Texas.</p>
+            <p>Image provided by: <a href="https://icons8.com">Icon pack by Icons8</a></p>
+            <a target="_blank" href="https://github.com/Whatchamazog/Site/issues/new">Report an Issue</a>
+            <br>
+          </div>
         </footer>
     </main>
-    <script type="text/javascript" src="javascript/projects.js"></script>
-    <script type="text/javascript" src="javascript/ie_work.js"></script>
-    <script type="text/javascript" src="javascript/age.js"></script>
-    <script type="text/javascript" src="javascript/work.js"></script>
+    <script type="text/javascript" src="age.js"></script>
 </body>
 </html>

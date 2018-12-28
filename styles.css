@@ -1,0 +1,10 @@
+h1, h2, h3, p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: rgb(247, 93, 93);
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    text-decoration: underline;
+}
