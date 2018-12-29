@@ -13,3 +13,29 @@ h1{
     font-size: 4.155rem;
     line-height: 2.668rem;
 }
+
+main{
+    margin: 0 auto;
+    width: 750px;
+}
+
+footer{
+    width: 100%;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer > div a {
+    margin: 10px;
+}
+
+.projects-container{
+    width: 101%;
+}
+
+.project-cell {
+    display: inline-block;
+    width: 375px;
+}
