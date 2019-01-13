@@ -15,12 +15,17 @@ h1{
 }
 
 body{
-    width: 95%;
+    width: 100%;
 }
 
 main{
+    margin: 2.25rem;
+    width: 95%;
+}
+
+section{
     margin: 0 auto;
-    width: 750px;
+    width: 725px;
 }
 
 footer{
@@ -36,11 +41,39 @@ footer > div a {
 }
 
 .projects-container{
-    width: 101%;
+    width: 900px;
 }
 
 .project-cell {
     display: inline-block;
     height: 275px;
     width: 375px;
+}
+
+@media (max-width: 450px){
+    main{
+        text-align: center;
+        width: 100%;
+    }
+
+    h1, section {
+        display: block;
+        width: 100%;
+    }
+
+    body{
+        width: 40%;
+    }
+
+    .projects-container, .project-cell, footer{
+        width: auto;
+    }
+
+    footer{
+        margin-right: -60px;
+    }
+
+    footer > div a{
+        display: block;
+    }
 }
