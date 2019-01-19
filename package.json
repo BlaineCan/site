@@ -1,0 +1,26 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "A basic website for me.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whatchamazog/Site.git"
+  },
+  "author": "Blaine Cantrell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Whatchamazog/Site/issues"
+  },
+  "homepage": "https://github.com/Whatchamazog/Site#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
