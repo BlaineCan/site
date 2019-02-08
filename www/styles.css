@@ -50,6 +50,20 @@ footer > div a {
     width: 375px;
 }
 
+#myHead{
+    animation: infinite 10s linear;
+    animation-name: myHead-spin;
+}
+
+@keyframes myHead-spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 @media (max-width: 450px){
     main{
         text-align: center;
