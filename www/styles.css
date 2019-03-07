@@ -3,10 +3,19 @@ h1, h2, h3, p{
 }
 
 a{
-    color: rgb(247, 93, 93);
+    color: rgb(0,0,0);/* rgb(247, 93, 93); <-- this is the old red. Bad score :(*/
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     text-decoration: underline;
+    /* This padding below was added for test */
+    padding: 0.25rem;
+}
+
+a:hover{
+    color: white;
+    background-color: black;
+    text-transform: capitalize;
+    text-decoration: none;
 }
 
 h1{
