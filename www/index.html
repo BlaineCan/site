@@ -6,18 +6,12 @@
     <meta name="author" content="Blaine Cantrell">
     <meta name="keywords" content="Blaine, Cantrell, Blaine Cantrell"> 
     <meta name="description" content="Just a little personal site I made for all myself.">
-    <title>Blaine Cantrell</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Fonts -->
+    <title>Blaine Cantrell</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    
     <link rel="icon" href="https://img.icons8.com/ios/100/000000/b-filled.png" type="image/png">
-
-    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
     <script>console.log("Hello! Thank you for checking out my little website. It's a bit on the vanilla side, but that just adds some character. Again, thank you for visiting and don't hesitate if you have any questions.")</script>
     <script>
@@ -27,7 +21,6 @@
 
       gtag('config', 'UA-125052926-1');
     </script>
-    <!-- -->
   </head>
   <body>
     <main>
@@ -40,14 +33,15 @@
           <h1>Hi<br></h1>
           <h1>My name is Blaine.</h1>
           <div>
-            <p>I am a <span id="age"></span> year old, mostly self-taught, highly motivated web application developer who likes to keep it simple and learn a thing or two in the process.</p>
+            <p>I am a <span id="age"><noscript>29</noscript></span> year old, mostly self-taught, highly motivated web application developer who likes to keep it simple and learn a thing or two in the process.</p>
           </div>
       </section>
       <br>
+
+      <!-- Projects -->
+
       <section>
         <br>
-
-        <!-- Projects-->
         <div class="projects-container">
           <h1>Projects</h1>
           <div class="project-cell">
@@ -75,13 +69,19 @@
             <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog/tunes">Code</a></p>
           </div>
         </div>
-
       </section>
+
+
       <br>
+
+      <!-- Resume -->
+
       <section>
         <img src="https://img.icons8.com/dotty/50/000000/resume.png" alt="Resume Icon">
         <p>I have a <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/17EUFm0ZSexfjawBBcclMewqzIIppYVRfjV-NJkX_IfQ/edit#heading=h.ca0awj8022e2">résumé</a> too, if you're into that sort of thing. </p>
       </section>
+
+
       <br>
     </main>
     <footer>
@@ -98,6 +98,24 @@
         <br>
       </div>
     </footer>
-    <script type="text/javascript" src="age.js"></script>
+    <script>
+      function getAge(dob){
+        let today = new Date();
+        let birthdate = new Date(dob);
+        let age = today.getFullYear() - birthdate.getFullYear();
+        let m = today.getMonth() - birthdate.getMonth();
+        if(m < 0 || (m === 0 && today.getDate() < birthdate.getDate())){
+          age = age - 1;   
+        }
+          return age;
+      }
+
+      function showAge(){
+        let age = document.querySelector("#age");
+        age.textContent = getAge("7/20/1989");
+      } 
+
+      showAge();
+    </script>
 </body>
 </html>
