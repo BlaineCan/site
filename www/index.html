@@ -1,17 +1,18 @@
+
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
     <meta content="text/html" charset="UTF-8">
     <meta name="google-site-verification" content="w5kC1j4k9M-Czj-feilz4R5YOJQ-6xe7_9_ZksMOR0s">
     <meta name="author" content="Blaine Cantrell">
-    <meta name="keywords" content="Blaine, Cantrell, Blaine Cantrell"> 
+    <meta name="keywords" content="Blaine, Cantrell, Blaine Cantrell">
     <meta name="description" content="Just a little personal site I made for all myself.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blaine Cantrell</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    <link rel="icon" href="https://img.icons8.com/ios/100/000000/b-filled.png" type="image/png">
+    <link rel="icon" href="https://img.icons8.com/ios/50/000000/jetpack-filled.png" type="image/png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
     <script>console.log("Hello! Thank you for checking out my little website. It's a bit on the vanilla side, but that just adds some character. Again, thank you for visiting and don't hesitate if you have any questions.")</script>
     <script>
@@ -38,6 +39,11 @@
       </section>
       <br>
 
+      <section>
+        <h1>What do you do?</h1>
+        <p>I build web apps, as well as other odds and ends I find amusing. </p>
+      </section>
+
       <!-- Projects -->
 
       <section>
@@ -59,14 +65,8 @@
           <div class="project-cell">
               <img src="https://img.icons8.com/carbon-copy/64/000000/dog.png" alt="Puppy Icon">
               <p><a target="_blank" rel="noopener noreferrer" href="https://salty-brook-98187.herokuapp.com/">Puppies</a></p>
-              <p>A react-express app that shows random pictures of puppies.</p>
+              <p>A react-express app that pull random puppy pictures from an api.</p>
               <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog/puppies">Code</a></p>
-          </div>
-          <div class="project-cell">
-            <img src="https://img.icons8.com/wired/64/000000/musical-notes.png" alt="Music Searcher Icon">
-            <p><a target="_blank" rel="noopener noreferrer" href="https://codepen.io/whatchamazog/pen/xaQMgK">Music Searcher</a></p>
-            <p>A iTunes api browser that takes an artist name and returns albums.</p>
-            <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog/tunes">Code</a></p>
           </div>
         </div>
       </section>
@@ -105,7 +105,7 @@
         let age = today.getFullYear() - birthdate.getFullYear();
         let m = today.getMonth() - birthdate.getMonth();
         if(m < 0 || (m === 0 && today.getDate() < birthdate.getDate())){
-          age = age - 1;   
+          age = age - 1;
         }
           return age;
       }
@@ -113,7 +113,7 @@
       function showAge(){
         let age = document.querySelector("#age");
         age.textContent = getAge("7/20/1989");
-      } 
+      }
 
       showAge();
     </script>
