@@ -65,6 +65,23 @@ footer > div a {
     padding: 0.25rem;
 }
 
+.inner-div-image {
+    padding: 1.85rem 1rem 0 0;
+}
+
+.inner-div-description {
+    width: 500px;
+}
+
+.main-project {
+    display: flex;
+    width: 900px;
+}
+
+.main-project-title{
+    font-size: 1.65rem;
+}
+
 #myHead{
     animation: infinite 10s linear;
     animation-name: myHead-spin;
