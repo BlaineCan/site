@@ -76,10 +76,11 @@ footer > div a {
 .main-project {
     display: flex;
     width: 900px;
+    margin: 1rem 0 1rem 0.5rem;
 }
 
-.main-project-title{
-    font-size: 1.65rem;
+.main-project-title, .inner-div-description {
+  margin: 1.5rem 0 0 1.5rem;
 }
 
 #myHead{
