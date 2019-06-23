@@ -128,23 +128,12 @@
       </div>
     </footer>
     <script>
-      function getAge(dob){
-        let today = new Date();
-        let birthdate = new Date(dob);
-        let age = today.getFullYear() - birthdate.getFullYear();
-        let m = today.getMonth() - birthdate.getMonth();
-        if(m < 0 || (m === 0 && today.getDate() < birthdate.getDate())){
-          age = age - 1;
-        }
-          return age;
-      }
-
-      function showAge(){
-        let age = document.querySelector("#age");
-        age.textContent = getAge("7/20/1989");
-      }
-
-      showAge();
+    function insertCurrentAge(){
+        let birthdayEpoch = "616972080000"
+        let currentAge = Math.floor((new Date().getTime() - birthdayEpoch) / 31536000000 );
+        document.querySelector("#age").textContent = currentAge;
+    }
+    insertCurrentAge();
     </script>
 </body>
 </html>
