@@ -1,4 +1,6 @@
 
+/* General styling */
+
 html{
     scroll-behavior: smooth;
 }
@@ -38,7 +40,7 @@ main{
 }
 
 section{
-    margin: 0 auto;
+    margin: 2rem auto;
     width: 725px;
 }
 
@@ -54,9 +56,30 @@ footer > div a {
     margin: 10px;
 }
 
+/* Title css */
+
+.title {
+  display: inline-block;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  padding: 0.55rem;
+}
+
+/* This is the css for my head */
+
+#myHead{
+    animation: infinite 10s linear;
+    animation-name: myHead-spin;
+}
+
+/* This is all the styling regarding the containers */
+
 .projects-container{
     width: 900px;
 }
+
+/* This is all the styling regarding the project cells */
 
 .project-cell {
     display: inline-block;
@@ -73,23 +96,21 @@ footer > div a {
     width: 500px;
 }
 
-.main-project {
-    display: flex;
-    width: 900px;
-    margin: 1rem 0 1rem 0.5rem;
+/* This is all the individual stylings for the cells */
+#riff-cell, #doing-cell, #clip-cell {
+  position: relative;
 }
 
-.main-project-title, .inner-div-description {
-  margin: 1.5rem 0 0 1.5rem;
+#riff-cell {
+  bottom: 2.1rem;
 }
 
-.riff-raff-container {
-  margin-left: 1.2rem;
+#doing-cell {
+  bottom: 1rem;
 }
 
-#myHead{
-    animation: infinite 10s linear;
-    animation-name: myHead-spin;
+#clip-cell {
+  bottom: 3rem;
 }
 
 @keyframes myHead-spin{
@@ -102,6 +123,11 @@ footer > div a {
 }
 
 @media (max-width: 450px){
+
+  .none {
+    display: none;
+  }
+
     main{
         text-align: center;
         width: 100%;

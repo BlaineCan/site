@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-    <link rel="icon" href="https://img.icons8.com/ios/50/000000/jetpack-filled.png" type="image/png">
+    <link rel="icon" href="https://img.icons8.com/color/96/000000/earth-planet.png" type="image/png">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
     <script>console.log("Hello! Thank you for checking out my little website. It's a bit on the vanilla side, but that just adds some character. Again, thank you for visiting and don't hesitate if you have any questions.")</script>
     <script>
@@ -31,27 +31,30 @@
         </div>
       </section>
       <section>
-          <h1>Hi<br></h1>
+          <h1>Hi!<br></h1>
           <h1>My name is Blaine.</h1>
-          <div>
+          <div class="none">
             <p>I am a <span id="age"><noscript>29</noscript></span> year old, mostly self-taught web application developer based out of <a noopener noreferrer href="https://www.google.com/maps/place/Dallas,+TX/@32.8209281,-97.0124235,10z/data=!3m1!4b1!4m5!3m4!1s0x864c19f77b45974b:0xb9ec9ba4f647678f!8m2!3d32.7766642!4d-96.7969879">Dallas, TX</a>. <img style="max-width: 1.2rem;" src="https://img.icons8.com/ios/50/000000/texas-filled.png"></p>
+            <p>I have a passion for overcoming challenges and always up to learning new things.</p>
           </div>
       </section>
 
       <!-- Process -->
 
-      <section>
+      <section class="none">
         <div>
           <h1>The Process</h1>
           <div class="projects-container">
             <div class="project-cell">
-              <img src="https://img.icons8.com/color/100/000000/thinking-male.png" alt="Thinking Icon">
-              <p>The Thinking</p>
+              <img src="https://img.icons8.com/color/80/000000/thinking-male.png" alt="Thinking Icon">
+              <br>
+              <p class="title">The Thinking</p>
               <p>It starts with the profound question, <br><em>"How funny would it be if... ?"</em>. Once I determine how funny it would be, I take a moment to enjoy my unique sense-of-humor. After a good laugh, the doing begins.</p>
             </div>
-            <div class="project-cell">
-              <img src="https://img.icons8.com/color/96/000000/working-with-a-laptop.png" alt="Doing Icon">
-              <p>The Doing</p>
+            <div class="project-cell" id="doing-cell">
+              <img src="https://img.icons8.com/color/80/000000/working-with-a-laptop.png" alt="Doing Icon">
+              <br>
+              <p class="title">The Doing</p>
               <p>The key is working tirelessly through the night, casting aside sleep, abandoning your Friday night plans, is visualizing how hard you're doing to laugh when people start to use your product.<br><em>** See Efficiency Squid.</em> </p>
             </div>
           </div>
@@ -61,64 +64,74 @@
 
       <!-- Projects -->
 
-      <section>
+      <section class="none">
         <br>
         <h1>Projects</h1>
-        <p>Take a peek at what I'm working on.</p>
+        <p>I have a wide variety of interest. So you'll find me reaching into all the cookie jars.</p>
+        <p>Below you take a peek at what I've been up to.</p>
         <br>
         <h2>FAQ: What have you been working on?</h2>
         <div class="projects-container">
           <div class="project-cell">
-            <img src="https://img.icons8.com/color/48/000000/mother.png" alt="Mom bot Icon">
-            <p><a>Mom Bot</a></p>
-            <p>Mom bot is the internet parential figure this generation needs. She provides you with all the guidance you will need as you make your way through this digital age.</p>
+            <img src="https://img.icons8.com/color/80/000000/mother.png" alt="Mom bot Icon">
+            <br>
+            <p class="title">Mom Bot</p>
+            <p>The internet parential figure this generation needs. She provides you with all the guidance you will need as you make your way through this digital age.</p>
+            <p><a target="_blank" noopener noreferrer href="https://github.com/Whatchamazog/Mom">Code</a></p>
+          </div>
+          <div class="project-cell" id="riff-cell">
+            <img src="https://img.icons8.com/color/80/000000/stack-of-photos.png" alt="Riff Icon">
+            <br>
+            <p class="title">Riff</p>
+            <p>I modern social platorm to share pictures of .. well, just about anything.</p>
+            <p><a target="_blank" noopener noreferrer href="https://github.com/Whatchamazog/Riff">Code</a></p>
+          </div>
+          <div class="project-cell" id="clip-cell">
+            <img src="https://img.icons8.com/color/80/000000/attach.png" alt="Paper clip Icon">
+            <br>
+            <p class="title">Paper Clip</p>
+            <p>Free trading service for people with too much stuff.</p>
             <p><a>Code</a></p>
           </div>
-          <div class="projects-container">
-            <div class="project-cell">
-              <img>
-              <p><a></a></p>
-              <p><a></a></p>
-            </div>
-            <div class="projects-container">
-              <div class="project-cell">
-                <img>
-                <p><a></a></p>
-                <p><a></a></p>
-              </div>
         </div>
+        <h2>Baby's First JS</h2>
+        <p>It's important to allows remember where you came from.</p>
+        <p>Take a look at some of the first projects I built.</p>
+        <p><em>**Spoilers: They're pretty bad.</em></p>
         <div class="projects-container">
           <div class="project-cell">
-            <img src="https://img.icons8.com/carbon-copy/64/000000/partly-cloudy-day.png" alt="Weather Icon">
-            <p><a target="_blank" rel="noopener noreferrer" href="https://glacial-shelf-37185.herokuapp.com/">Weather</a></p>
+            <img src="https://img.icons8.com/color/80/000000/partly-cloudy-day.png" alt="Weather Icon">
+            <br>
+            <p class="title">Weather</p>
             <p>A simple express app that takes a city name and returns the weather conditions.</p>
-            <p><a href="https://github.com/Whatchamazog/weather">Code</a></p>
+            <p><a target="_blank" noopener noreferrer href="https://github.com/Whatchamazog/weather">Code</a></p>
           </div>
           <div class="project-cell">
-            <img src="https://img.icons8.com/carbon-copy/64/000000/calculator.png" alt="Calculator Icon">
-            <p><a target="_blank" rel="noopener noreferrer" href="https://whatchamazog.github.io/calculator/">Calculator</a></p>
+            <img src="https://img.icons8.com/color/80/000000/calculator.png" alt="Calculator Icon">
+            <br>
+            <p class="title">Calculator</p>
             <p>A basic javascript calculator that is in the process of being converted into an electron app.</p>
             <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog/calculator">Code</a></p>
           </div>
           <div class="project-cell">
-              <img src="https://img.icons8.com/carbon-copy/64/000000/dog.png" alt="Puppy Icon">
-              <p><a target="_blank" rel="noopener noreferrer" href="https://salty-brook-98187.herokuapp.com/">Puppies</a></p>
+              <img src="https://img.icons8.com/color/80/000000/dog.png" alt="Puppy Icon">
+              <br>
+              <p class="title">Puppies</p>
               <p>A react-express app that pull random puppy pictures from an api.</p>
               <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog/puppies">Code</a></p>
           </div>
         </div>
       </section>
-      <br>
 
       <!-- Resume -->
 
-      <section>
-        <img src="https://img.icons8.com/dotty/50/000000/resume.png" alt="Resume Icon">
+      <section class="none">
+        <img src="https://img.icons8.com/color/80/000000/resume.png" alt="Resume Icon">
         <p>I have a <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/document/d/17EUFm0ZSexfjawBBcclMewqzIIppYVRfjV-NJkX_IfQ/edit#heading=h.ca0awj8022e2">résumé</a> too, if you're into that sort of thing. </p>
       </section>
-
       <br>
     </main>
+
     <footer>
       <div>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog">Github</a>
