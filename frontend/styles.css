@@ -97,7 +97,7 @@ footer > div a {
 }
 
 /* This is all the individual stylings for the cells */
-#riff-cell, #doing-cell, #clip-cell {
+#riff-cell, #doing-cell, #clip-cell, #thinking-cell, #mom-cell {
   position: relative;
 }
 
@@ -110,7 +110,15 @@ footer > div a {
 }
 */
 #clip-cell {
-  bottom: 3rem;
+  bottom: 3.2rem;
+}
+
+#thinking-cell {
+  top: 2rem;
+}
+
+#mom-cell {
+  top: 0.2rem;
 }
 
 @keyframes myHead-spin{
