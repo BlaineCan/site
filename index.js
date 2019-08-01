@@ -7,7 +7,7 @@ const start = async () => {
   let port = process.env.PORT || 3000;
   const server = Hapi.server({
     port: port,
-    host: 'localhost'
+    host: 0.0.0.0 // using losthost caused binding errors with heroku.
   })
 
   await server.register(require('@hapi/inert'))
