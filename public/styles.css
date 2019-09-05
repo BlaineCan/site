@@ -1,164 +1,53 @@
 
-/* General styling */
-
 html{
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2, h3, p{
-    font-family: 'Montserrat', sans-serif;
+#lead {
+  font-size: 20px;
 }
 
-a{
-    color: rgb(0,0,0);/* rgb(247, 93, 93); <-- this is the old red. Bad score :(*/
-    font-family: 'Open Sans', sans-serif;
-    cursor: pointer;
-    text-decoration: underline;
-    /* This padding below was added for test */
-    padding: 0.25rem;
+body, main, ul, p {
+  margin: 0;
 }
 
-a:hover{
-    color: white;
-    background-color: black;
-    text-transform: capitalize;
-    text-decoration: none;
+a {
+  color: #3689e6;
+  text-decoration: none;
 }
 
-h1{
-    font-size: 4.155rem;
-    line-height: 2.668rem;
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-body{
-    width: 100%;
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
 }
 
-main{
-    margin: 2.25rem;
-    width: 95%;
+li {
+  margin: 0 12px 0 0;
 }
 
-section{
-    margin: 2rem auto;
-    width: 725px;
+li a {
+  font-weight: lighter;
+  font-size: 14px;
 }
 
-footer{
-    width: 100%;
+footer {
+  position: absolute;
+  bottom: 12px;
+  right: 555px;
+  height: 2rem;
+  font-size: 12px;
+  text-align: center;
 }
 
-footer div{
-    text-align: center;
-}
-
-footer > div a {
-    margin: 10px;
-}
-
-/* Title css */
-
-.title {
-  display: inline-block;
-  font-size: 16px;
-  background-color: black;
-  color: white;
-  padding: 0.55rem;
-}
-
-/* This is the css for my head */
-
-#myHead{
-    animation: infinite 10s linear;
-    animation-name: myHead-spin;
-}
-
-/* This is all the styling regarding the containers */
-
-.projects-container{
-    width: 900px;
-}
-
-/* This is all the styling regarding the project cells */
-
-.project-cell {
-    display: inline-block;
-    height: 300px;
-    width: 275px;
-    padding: 0.25rem;
-}
-
-.inner-div-image {
-    padding: 1.85rem 1rem 0 0;
-}
-
-.inner-div-description {
-    width: 500px;
-}
-
-/* This is all the individual stylings for the cells */
-#riff-cell, #doing-cell, #clip-cell, #thinking-cell, #mom-cell {
-  position: relative;
-}
-
-#riff-cell {
-  bottom: 2.1rem;
-}
-/*
-#doing-cell {
-  bottom: 1rem;
-}
-*/
-#clip-cell {
-  bottom: 3.2rem;
-}
-
-#thinking-cell {
-  top: 2rem;
-}
-
-#mom-cell {
-  top: 0.2rem;
-}
-
-@keyframes myHead-spin{
-    from{
-        transform: rotate(0deg);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-@media (max-width: 450px){
-
-  .none {
-    display: none;
-  }
-
-    main{
-        text-align: center;
-        width: 100%;
-    }
-
-    h1, section {
-        display: block;
-        width: 100%;
-    }
-
-    body{
-        width: 40%;
-    }
-
-    .projects-container, .project-cell, footer{
-        width: auto;
-    }
-
-    footer{
-        margin-right: -60px;
-    }
-
-    footer > div a{
-        display: block;
-    }
+.mess-container {
+  position: absolute;
+  top: 24px;
+  left: 125px;
 }
