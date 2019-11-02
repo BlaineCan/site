@@ -50,8 +50,8 @@ footer {
 
 .mess-container {
   position: absolute;
-  top: 24px;
-  left: 125px;
+  top: 100px;
+  left: 145px;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
