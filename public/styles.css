@@ -44,7 +44,11 @@ a::before {
 }
 
 #greeting + p::after {
-        content: "❤️"
+        font-size: 14px;
+        content: "🙂";
+        position: absolute;
+        top: 171px;
+        left: 80px;
 }
 
 img {
@@ -65,5 +69,12 @@ img {
         ul {
                 display: flex;
                 flex-direction: column;
+        }
+
+        #greeting + p::after {
+                font-size: 18px;
+                position: absolute;
+                top: 212px;
+                left: 120px;
         }
 }
