@@ -1,6 +1,6 @@
 
 *{
-        font-family: sans-serif;
+        font-family: Geneva, Helvetica, sans-serif;
         font-size: 16px;
         font-weight: 200;
         font-size-adjust: auto;
@@ -22,9 +22,11 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-
+	
+	/* I don't remember why this is seperated. */
         list-style: none;
-
+	
+	/* This either. I'm sure there is a reason for it. */
         text-transform: lowercase;
 
 }
@@ -38,7 +40,9 @@ a:visited, a:active, a:focus, a:hover {
         color: #0000EE;
 }
 
-a::before {
+/* I added the li here to test something out. Feel free to remember it.  */
+
+li a::before {
         font-size: 18px;
         content: "/";
 }
