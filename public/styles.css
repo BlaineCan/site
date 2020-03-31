@@ -22,10 +22,10 @@ ul {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-	
+
 	/* I don't remember why this is seperated. */
         list-style: none;
-	
+
 	/* This either. I'm sure there is a reason for it. */
         text-transform: lowercase;
 
@@ -43,14 +43,13 @@ a:visited, a:active, a:focus, a:hover {
 /* I added the li here to test something out. Feel free to remember it.  */
 
 li a::before {
-        font-size: 18px;
+        /* Removed the font size: 18 that used to be here. It did bad things.  */
         content: "/";
 }
 
 #greeting + p::after {
         font-size: 14px;
         content: "🙂";
-        position: absolute;
 }
 
 img {
@@ -74,6 +73,5 @@ img {
 
         #greeting + p::after {
                 font-size: 18px;
-                position: absolute;
         }
 }
