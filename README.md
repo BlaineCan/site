@@ -13,12 +13,7 @@ Yupe. Find where you the downloaded the forked repo and jump into that directory
 ```bash
 cd $PATH
 ```
-
-In the directory, install your dependencies and have fun!
-
-```bash
-npm install && npm start
-```
+Then just open the ```index.html``` file with your favorite web browser. 
 
 ## I Found an error.
 
