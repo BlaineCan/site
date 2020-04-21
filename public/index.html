@@ -29,7 +29,7 @@
                                 <ul>
                                         <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog">Github</a></li>
                                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/blaine-cantrell-9795a559/">LinkedIn</a></li>
-                                        <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/bbbbbbbbbblaine">Twitter</a></li>
+                                        <li><a target="_blank" rel="noopener noreferrer" href="https://twitter.com/Whatchamazogg">Twitter</a></li>
                                         <li><a target="_blank" rel="noopener noreferrer" href="https://dev.to/whatchamazog">Dev.to</a></li>
                                 </ul>
                        </div>
