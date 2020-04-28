@@ -62,6 +62,12 @@ img {
                 font-weight: lighter;
         }
 
+        /* This is just to get it off the bottom of the screen for mobile. */
+
+        div {
+                top: 25px;
+        }
+
         img {
                 display: block;
                 width: 100%;
