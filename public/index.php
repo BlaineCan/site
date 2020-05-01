@@ -9,8 +9,8 @@
                 <title>Blaine Cantrell</title>
                 <link rel="stylesheet" type="text/css" href="styles.css">
                 <link rel="icon" href="https://img.icons8.com/color/96/000000/earth-planet.png" type="image/png">
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
-                <!-- I decided to keep the google analytics stuff. Don't ask me why. I do not have an answer for you.-->
+               <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125052926-1"></script>
+               <!-- I decided to keep the google analytics stuff. Don't ask me why. I do not have an answer for you.-->
                 <script>
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
@@ -23,9 +23,12 @@
                         <!-- This is literally the only div. Why does it have a class name? :) -->
                         <div>
                                 <img src= "./img/spaceman.gif" alt="Image not found 🤷">
-                                <p>Hi!</p>
-                                <p id="greeting">My name is Blaine.</p>
-				<p>I like math.</p>
+                                <p><?php
+					$greetings = array("Good morning!", "Good afternoon!", "Good evening!");
+					echo $greetings[0];
+				?></p>
+                                <p>My name is Blaine.</p>
+                                <p>I build things and do stuff.</p>
                                 <ul>
                                         <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/Whatchamazog">Github</a></li>
                                         <li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/blaine-cantrell-9795a559/">LinkedIn</a></li>
