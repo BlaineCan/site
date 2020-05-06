@@ -19,6 +19,10 @@ div {
         margin-top: -137.5px;
 }
 
+p:nth-child(4) {
+	margin: 2.5px 0 5px 0;
+}
+
 ul {
         display: flex;
         flex-direction: row;
@@ -37,7 +41,6 @@ li {
         z-index: 2;
 }
 
-
 a:visited, a:active, a:focus, a:hover {
         color: #0000EE;
 }
@@ -47,11 +50,6 @@ a:visited, a:active, a:focus, a:hover {
 li a::before {
         /* Removed the font size: 18 that used to be here. It did bad things.  */
         content: "/";
-}
-
-#greeting + p::after {
-        font-size: 14px;
-        content: "🙂";
 }
 
 img {
