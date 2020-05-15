@@ -49,7 +49,10 @@ a:visited, a:active, a:focus, a:hover {
 
 li a::before {
         /* Removed the font size: 18 that used to be here. It did bad things.  */
-        content: "/";
+        /* Here you go Chris, just for you. 
+	 * content: "/";
+	 *
+	 * */
 }
 
 img {
@@ -77,8 +80,17 @@ img {
         ul {
                 display: block;
         }
-
-        #greeting + p::after {
-                font-size: 18px;
-        }
 }
+
+/* This is a media query aiming to fix some weird spacing issue on some phones.
+ * If it doesn't work, feel free to delete it. */
+
+ @media (min-width: 375px) and (max-width: 667px) {
+         img {
+                 width: 60%;
+                 margin: auto;
+         }
+         li {
+                 margin: 0 16px 5 px 0;
+         }
+ }
