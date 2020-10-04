@@ -55,6 +55,14 @@ li a::before {
 	 * */
 }
 
+/* This should target the testimonial list giving it the space it needs to not look like a complete mess.
+ * EDIT: Just kidding, it didn't. */
+
+dl {
+	display: flex;
+	width: 500px;
+}
+
 img {
         width: 85%;
 }
