@@ -1,4 +1,14 @@
 
+/* Defining the spin animation */
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+
 *{
         font-family: Geneva, Helvetica, sans-serif;
         font-size: 16px;
@@ -12,7 +22,7 @@
 div {
         position: absolute;
         left: 50%;
-        top: 40%;
+        top: 25%;
         width: 275px;
         height: 275px;
         margin-left: -137.5px;
@@ -64,7 +74,10 @@ dl {
 }
 
 img {
-        width: 85%;
+        width: 100%;
+		/* Bringing back the spin */
+		animation: spin .768s linear infinite;			
+		
 }
 
 h1 {
