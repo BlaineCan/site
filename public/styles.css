@@ -30,7 +30,7 @@ div {
 }
 
 p:nth-child(4) {
-	margin: 2.5px 0 20px 0;
+	margin: 2.5px 0 25px 0;
 }
 
 ul {
@@ -58,13 +58,13 @@ a:visited, a:active, a:focus, a:hover {
 
 /* I added the li here to test something out. Feel free to remember it.  */
 
-li a::before {
+/* li a::before {
         /* Removed the font size: 18 that used to be here. It did bad things.  */
         /* Here you go Chris, just for you.
 	 * content: "/";
 	 *
-	 * */
-}
+	 *
+} */ 
 
 /* This should target the testimonial list giving it the space it needs to not look like a complete mess.
  * EDIT: Just kidding, it didn't. */
@@ -75,7 +75,7 @@ dl {
 }
 
 img {
-        margin: 0 0 75px 0;
+        margin: 0 0 76px 0;
         width: 100%;
 		/* Bringing back the spin */
 		animation: spin .768s linear infinite;			
