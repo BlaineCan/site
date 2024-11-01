@@ -1,151 +1,83 @@
+/* styles.css */
 
-/* Defining the spin animation */
-@keyframes spin {
-	0% {
-		transform: rotateZ(0);
-	}
-	100% {
-		transform: rotateZ(360deg);
-	}
-}
-
-*{
-        font-family: Geneva, Helvetica, sans-serif;
-        font-size: 16px;
-        font-weight: 200;
-        font-size-adjust: auto;
-        padding: 0;
+/* Basic reset and styling */
+* {
         margin: 0;
-        /* z-index: 1; */
-}
-
-div {
-        position: absolute;
-        left: 50%;
-        top: 25%;
-        width: 275px;
-        height: 275px;
-        margin-left: -137.5px;
-        margin-top: -137.5px;
-}
-
-div p {
-        width: 474px;
-}
-
-p:nth-child(4) {
-	margin: 2.5px 0 25px 0;
-}
-
-ul {
-        margin: 20px 0 15px 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f8f9fa; /* Soft gray background for contrast */
         display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-
-	/* I don't remember why this is seperated. */
-        list-style: none;
-
-	/* This either. I'm sure there is a reason for it. */
-        text-transform: lowercase;
-
-}
-
-li {
-        margin-right: 16px;
-        /* z-index: 2; */
-}
-
-a:visited, a:active, a:focus, a:hover {
-        color: #0000EE;
-}
-
-/* I added the li here to test something out. Feel free to remember it.  */
-
-/* li a::before {
-        /* Removed the font size: 18 that used to be here. It did bad things.  */
-        /* Here you go Chris, just for you.
-	 * content: "/";
-	 *
-	 *
-} */ 
-
-/* This should target the testimonial list giving it the space it needs to not look like a complete mess.
- * EDIT: Just kidding, it didn't. */
-
-dl {
-	display: flex;
-	width: 500px;
-}
-
-img {
-        margin: 0 0 76px 0;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 1rem; /* Small padding for mobile */
+    }
+    
+    /* Centering and layout */
+    main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
-		/* Bringing back the spin */
-		animation: spin .768s linear infinite;			
-		
-}
-
-h1 {
-        font-weight: bold;
-        margin: 0 12px 14px 0;
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-        *, a::before{
-                font-size: 24px;
-                font-weight: lighter;
+        max-width: 600px; /* Max width to avoid excessive stretching on large screens */
+        text-align: center;
+    }
+    
+    .profile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    /* Image styling */
+    .profile img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        animation: spin 6s linear infinite; /* Spinning animation */
+    }
+    
+    /* Typography */
+    h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #222;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #555;
+    }
+    
+    p {
+        font-size: 1rem;
+        color: #666;
+    }
+    
+    /* Animation */
+    @keyframes spin {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    
+    /* Responsive adjustments */
+    @media (max-width: 480px) {
+        h1 {
+            font-size: 1.8rem;
         }
-
-        /* This is just to get it off the bottom of the screen for mobile. */
-
-        a {
-                text-decoration: none;
+        h2 {
+            font-size: 1.1rem;
         }
-
-        div {
-                top: 215px;
+        p {
+            font-size: 0.9rem;
         }
-
-        img, ul, li {
-                display: block;
-        }
-
-        img {
-                width: 100%;
-        }
-}
-
-/* This is a media query aiming to fix some weird spacing issue on some phones.
- * If it doesn't work, feel free to delete it. */
-
- @media (min-width: 375px) and (max-width: 667px) {
-
-         img, ul, li, a {
-                 display: block;
-         }
-
-         img {
-                 width: 60%;
-                 margin: auto;
-         }
-
-         li,a {
-                 text-decoration: none;
-         }
-
-         a {
-                 padding: 12px;
-                 border: 2px #0000EE solid;
-                 text-align: center;
-         }
-
-         a:nth-child(1) {
-                 margin: 12px 0 0 0;
-         }
-
-         li {
-                 /* Lol, just kidding. */
-                 margin: 0 0 24px 0;
-         }
- }
+    }
+    
